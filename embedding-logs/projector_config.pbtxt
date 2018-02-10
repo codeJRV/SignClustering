@@ -1,0 +1,4 @@
+embeddings {
+  tensor_name: "features_1:0"
+  metadata_path: "/home/jrv/Research/TTI_Research/Clustering/MyWork/embedding-logs/metadata_6_classes.tsv"
+}

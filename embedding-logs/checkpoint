@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/jrv/Research/TTI_Research/Clustering/MyWork/embedding-logs/images_6_classes.ckpt"
+all_model_checkpoint_paths: "/home/jrv/Research/TTI_Research/Clustering/MyWork/embedding-logs/images_6_classes.ckpt"
