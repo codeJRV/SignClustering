@@ -11,7 +11,7 @@ The Pascal VOC Toolkit comes with a Matlab/C implementation of HOG features by
 Pedro Felzenszwalb, Deva Ramanan and presumably others. Since I'm not very fond
 of Matlab I replaced the Matlab-specific parts for their Numpy equivalents. It
 works, but it's not very efficient because it copies the array into a
-Fortran-ordered version. That should be easy to fix.
+Fortran-ordered version. That should be easy to fix but I'm too lazy to fix it.
 
 Using tensorflow: 
 ----------
@@ -40,7 +40,7 @@ To run the embeddings launch tensor board
 To regenerate the same embedding logs you can use the feature_vectors_400_samples.txt in the feature_vectors.zip file.
 
 If you want to generate embedding visulaization for the given feature vector data, you can directly look into 
-[Visualizer.ipynb](https://github.com/codeJRV/Tensorboard-own-image-data-image-features-embedding-visualization/blob/master/own-data-embedding-visualization.py) script to visualize your feature vectors in embedding visualizer.
+[Visualizer.ipynb](https://github.com/codeJRV/SignClustering/blob/master/Visualizer.ipynb) script to visualize your feature vectors in embedding visualizer.
 
 The code is described block wise in the next section of # Generating the embedding logs for your own feature vectors
 Running this script will generate the embedding logs specified to your system path .
@@ -53,7 +53,16 @@ Then you can run the tensorboard using
        Then go to the embedding options in Tensorboard
 
 # Data used in this Example
-I have used 6 categories with around 300 images in total. The data is stored in the ./data folder. The fearure vectors are generated using the FHOGExtractor.ipynb
+I have used 6 categories with around 300 images in total. The data is stored in the ./data folder. The fearure vectors are generated using the [FHogExtractor.ipynb](https://github.com/codeJRV/SignClustering/blob/master/FHogExtractor.ipynb). 
+
+# Feature Extraction:
+
+The [FHogExtractor.ipynb](https://github.com/codeJRV/SignClustering/blob/master/FHogExtractor.ipynb) is meant to provide an easy-to-use implementation of the Felzenszwalb HOG features extractor. 
+This approach followed the one presented by Felzenszwalb, Pedro F., et al. "Object detection with discriminatively trained part-based models." Pattern Analysis and Machine Intelligence, IEEE Transactions on 32.9 (2010): 1627-1645. The OpenCV library has only the original HOG, proposed by Dalal and Triggs. Hence we deploy a custom implimentation of the F-Hog extractor using python and numpy in order to generate the oriented gradients by ourselves.
+
+In order to use the import pyhog functionality in the ipython-notebook, cd to the clonned repository and run 'make' on it. In order to use the F-HOG anywhere in the computer, run sudo make install.
+
+
 
 # Generating the embedding logs for your own feature vectors
 
