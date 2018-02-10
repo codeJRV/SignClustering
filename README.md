@@ -3,6 +3,7 @@
 
 This Repository basically clusters images of traffic signs in order to visualize and prove that their in class variances are very low. This is a step towards my thesis that we can build more efficient algorithms for sign detection and tracking of traffic signs as we exactly know what we are looking for.
 
+![alt text](https://github.com/codeJRV/SignClustering/blob/master/Demo.png)
 
 Using pyhog  : 
 ----------
