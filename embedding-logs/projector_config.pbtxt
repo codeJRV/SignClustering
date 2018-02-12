@@ -1,4 +1,9 @@
 embeddings {
   tensor_name: "features_1:0"
-  metadata_path: "/home/jrv/Research/TTI_Research/Clustering/MyWork/embedding-logs/metadata_6_classes.tsv"
+  metadata_path: "/home/jrv/Research/TTI_Research/Clustering/SignClustering/embedding-logs/metadata_6_classes.tsv"
+  sprite {
+    image_path: "/home/jrv/Research/TTI_Research/Clustering/SignClustering/embedding-logs/sprite_6_classes.png"
+    single_image_dim: 150
+    single_image_dim: 150
+  }
 }
